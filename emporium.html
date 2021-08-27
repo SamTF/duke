@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="emporiumstyle.css">
+
+    <!-- IMPORTING JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>The Duke's Emporium</title>
+</head>
+
+<!-- ------------------------ THE BODY : top level container grid ------------------------ -->
+<body>
+    <!-- HEADER -->
+    <header>
+        <div>:)</div>
+        <div>
+            <h1>Supplies</h1>
+            <h2>Spend today, live till tomorrow!</h2>
+        </div>
+        <div class="currency">
+            <img src="images/duke_coin.png">
+            20000
+            <small>Lei</small>
+        </div>
+        
+    </header>
+
+    <!------------------------- MAIN SECTION : Shop container grid ------------------------->
+    <main>
+        <!-- Left Margin -->
+        <div class="main-margin"></div>
+
+        <!---------------------------------- THE SHOP UI ----------------------------------->
+        <div class="main-shop">
+
+            <!----------------------------- ITEM CATALOGUE --------------------------------->
+            <div class="catalogue">
+                <!-- HEADER -->
+                <div class="cat-header">
+                    <h1>ALL</h1>
+                    <hr class="hr4">
+                </div>
+
+                <!-------------------------- ITEM LIST -------------------------->
+                <div class="cat-items">
+                    <!-- ITEM CARD TEMPLATE -->
+                    <template id="template">
+                        <div class="item" id="item">
+                            <div class="img-container"><img src="" title="" id="item-img"></div>
+                            <div id="price-container">
+                                <hr>
+                                <img src="images/duke_coin_shadow.png" class="coin" title="Lei" id='item'>
+                                <p id="item-price">123</p>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+                <!--/---/---/--/---/---/--/---/---/ ITEM LIST END --/---/---/--/---/---/---/-->
+                
+
+                <!--------------------------------- ITEM INFO -------------------------------->
+                <div class="cat-item-info">
+
+                    <!-- Margin Left -->
+                    <div></div>
+
+                    <!-- Main Content -->
+                    <div class="info-box">
+                        <div>
+                            <hr class="hr1">
+                            <h1 id='info-item-name'>M1897</h1>
+                            <h2 id='info-item-type'>Shotgun</h2>
+                            <hr class="hr2">
+                        </div>
+
+                        <div>
+                            <hr class="hr3" style="margin-top: 3px;">
+                            <p id='info-item-desc'>A pump-action shotgun commonly used for hunting. Well known for its stability and reliability.</p>
+                        </div>
+
+                    </div>
+                    
+                    <!-- Margin Right -->
+                    <div></div>
+                </div>
+            </div>
+            <!--/---/---/--/---/---/--/---/---/ ITEM INFO END --/---/---/--/---/---/---/-->
+
+
+            <!------------------------------- ITEM PREVIEW  -------------------------------->
+            <div class="preview">
+
+                <!-- top margin - empty -->
+                <div class="preview-top"></div>
+
+                <!-- IMAGE PREVIEW -->
+                <div class="preview-img">
+                    <img src="images/items/LEMI_HD.webp" id="preview-image">
+                </div>
+
+                <!--------------------------- ITEM STATS --------------------------->
+                <div class="preview-stats">
+                    <!-- margin left -->
+                    <div></div>
+
+                    <!-- STATS BOX -->
+                    <div class="stats-box">
+                        <!-- Power -->
+                        <div class="stats-item">
+                            <p>Power</p>
+                            <p>Lv. 1</p>
+                            <p id='item-stats-power'>75</p>
+                            <div><img src="images/level_tick.svg"><img src="images/level_untick.svg"><img src="images/level_untick.svg"><img src="images/level_untick.svg"><img src="images/level_untick.svg"><img src="images/level_untick.svg"></div>
+                        </div>
+                        <div class="double-line"><hr class="hr2"><hr class="hr3"></div>
+
+                        <!-- Rate of Fire -->
+                        <div class="stats-item">
+                            <p>Rate of Fire</p>
+                            <p>Lv. 1</p>
+                            <p id='item-stats-rof'>0.45</p>
+                            <div><img src="images/level_tick.svg"><img src="images/level_untick.svg"><img src="images/level_untick.svg"></div>
+                        </div>
+                        <div class="double-line"><hr class="hr2"><hr class="hr3"></div>
+
+                        <!-- Reload Speed -->
+                        <div class="stats-item">
+                            <p>Reload Speed</p>
+                            <p>Lv. 1</p>
+                            <p id='item-stats-reload'>2.7</p>
+                            <div><img src="images/level_tick.svg"><img src="images/level_untick.svg"><img src="images/level_untick.svg"></div>
+                        </div>
+                        <div class="double-line"><hr class="hr2"><hr class="hr3"></div>
+
+                        <!-- Ammo Capacity -->
+                        <div class="stats-item">
+                            <p>Ammo Capacity</p>
+                            <p>Lv. 1</p>
+                            <p id='item-stats-ammo'>10</p>
+                            <div><img src="images/level_tick.svg"><img src="images/level_untick.svg"><img src="images/level_untick.svg"><img src="images/level_untick.svg"><img src="images/level_untick.svg"><img src="images/level_untick.svg"></div>
+                        </div>
+                        <div class="double-line"><hr class="hr2"><hr class="hr3"></div>
+                    </div>
+
+                    <!-- margin right -->
+                    <div></div>
+                </div>
+            </div>
+            <!--/---/---/--/---/---/--/---/---/ ITEM PREVIEW END --/---/---/--/---/---/---/-->
+
+        </div>
+
+        <!-- Main Right Margin -->
+        <div class="main-margin"></div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>Select item to purchase.</footer>
+
+
+    <!-- SCRIPTS -->
+    <!-- Changing image preview when hovering over item -->
+    <script src="js/duke.js"></script>
+
+    <!-- Initialising items from template -->
+    <script src="js/init_items.js"></script>
+
+</body>
+</html>

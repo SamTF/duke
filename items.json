@@ -1,0 +1,137 @@
+{
+    "heal": {
+        "name": "First Aid Med",
+        "type": "Medicine",
+        "description": "Medicine that fully heals all wounds. Closes gashes and acts as a clotting agent while restoring function to damaged systems.",
+        "stats": [0,0,0,0],
+        "price": 2500
+    },
+
+    "1911": {
+        "name": "M1911",
+        "type": "Handgun",
+        "description": "A comfortable *semi*-automatic handgun. Hold down the trigger to fire a continuous string of bullets. (this is a lie)",
+        "stats": [160, 0.27, 2.5, 5],
+        "price": 10000
+    },
+    "LEMI": {
+        "name": "LEMI",
+        "type": "Handgun",
+        "description": "A small, easy-to-use semi-automatic pistol with average firing power.",
+        "stats": [100, 0.45, 2.7, 10],
+        "price": 0
+    },
+    "v61": {
+        "name": "V61 Custom",
+        "type": "Handgun",
+        "description": "A powerful fully automatic machine pistol. Capable of even greater firepower after customization. (it's not full auto in the game tho)",
+        "stats": [200, 0.38, 3, 12],
+        "price": 180000
+    },
+
+    "M1897": {
+        "name": "M1897",
+        "type": "Shotgun",
+        "description": "A pump-action shotgun commonly used for hunting. Well known for its stability and reliability.",
+        "stats": [620, 1.7, 2.8, 5],
+        "price": 24000
+    },
+    "W870": {
+        "name": "W870 TAC",
+        "type": "Shotgun",
+        "description": "A pump-action combat shotgun. Has a wide spray that's good for suppressing groups of enemies.",
+        "stats": [760, 1.6, 2.7, 4],
+        "price": 90000
+    },
+    "SYG_12": {
+        "name": "SYG-12",
+        "type": "Shotgun",
+        "description": "A semi-automatic shotgun whose focused shots make it powerful against single enemies. Customizable for even more firepower.",
+        "stats": [1160, 1.4, 3.5, 10],
+        "price": 180000
+    },
+
+    "sniper": {
+        "name": "F2",
+        "type": "Sniper Rifle",
+        "description": "A bolt-action sniper rifle. Specialized for taking out long-range targets.",
+        "stats": [600, 2, 3.7, 4],
+        "price": 0
+    },
+    
+
+    "bomb": {
+        "name": "Pipe Bomb",
+        "type": "Explosive",
+        "description": "A handmade pipe bomb. When thrown, it explodes violently upon impact or after a set amount of time.",
+        "stats": [0,0,0,0],
+        "price": 500
+    },
+    "mine": {
+        "name": "Mine",
+        "type": "Explosive",
+        "description": "A handmade mine. Explodes violently when stepped on.",
+        "stats": [0,0,0,0],
+        "price": 500
+    },
+
+
+    "shotgun_ammo_recipe": {
+        "name": "Recipe: Shotgun Ammo",
+        "type": "Recipe",
+        "description": "Learn how to make shotgun ammo using the CRAFTING menu.",
+        "stats": [0,0,0,0],
+        "price": 2500
+    },
+    "sniper_ammo_recipe": {
+        "name": "Recipe: Sniper Rifle Ammo",
+        "type": "Recipe",
+        "description": "Learn how to make sniper rifle ammo using the CRAFTING menu.",
+        "stats": [0,0,0,0],
+        "price": 4000
+    },
+    "magnum_ammo_recipe": {
+        "name": "Recipe: Magnum Ammo",
+        "type": "Recipe",
+        "description": "Learn how to make magnum ammo using the CRAFTING menu.",
+        "stats": [0,0,0,0],
+        "price": 10000
+    },
+
+    "handgun_ammo": {
+        "name": "Handgun Ammo",
+        "type": "Ammo",
+        "description": "9mm parahellum rounds for a handgun. Generic rounds that have little stopping power, but are easy to handle.",
+        "stats": [0,0,0,0],
+        "price": 150
+    },
+    "shotgun_ammo": {
+        "name": "Shotgun Ammo",
+        "type": "Ammo",
+        "description": "12-gauge shotshells. Each shell has a wide burst, packing a powerful punch.",
+        "stats": [0,0,0,0],
+        "price": 1000
+    },
+    "flashbang_ammo": {
+        "name": "Flashbang",
+        "type": "Ammo",
+        "description": "Projectile for grenade launchers. Releases a powerful light that dazes enemies.",
+        "stats": [0,0,0,0],
+        "price": 1000
+    },
+    "explosive_ammo": {
+        "name": "Explosive Rounds",
+        "type": "Ammo",
+        "description": "Projectile for grenade launchers. Explosive power that damages a wide area.",
+        "stats": [0,0,0,0],
+        "price": 1000
+    },
+    "magnum_ammo": {
+        "name": "Magnum Ammo",
+        "type": "Ammo",
+        "description": "Fifty-caliber magnum cartridges. Packed with powder for a powerful shot that can pierce most armor.",
+        "stats": [0,0,0,0],
+        "price": 10000
+    }
+
+}
